@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>NX </h1>
+<div mat-dialog-content>
+    <button mat-raised-button (click)="getRoles()">Get Roles</button>
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Title">
+        </mat-form-field>
+
+        <mat-form-field>
+                <input matInput placeholder="Description">
+            </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Submit Form</button>
+        <button mat-button (click)="onNoClick()">No Thanks</button>
+    </div>

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { select, Store } from '@ngrx/store'
+import { select, Store } from '@ngrx/store';
 import { CreatePartialState } from './create.reducer';
 import { createQuery } from './create.selectors';
-import { LoadRoles, ShowModal } from './create.actions';
+import { LoadRoles, ShowModal, CloseModal, CreateTask } from './create.actions';
 
 @Injectable()
 export class CreateFacade {
@@ -10,13 +10,20 @@ export class CreateFacade {
 
   constructor(private store: Store<CreatePartialState>) {}
 
-
   loadRoles() {
     this.store.dispatch(new LoadRoles());
   }
 
-  showModal()
+  showModal() {
+    this.store.dispatch(new ShowModal());
+  }
+
+  closeModal() {
+    this.store.dispatch(new CloseModal());
+  }
+
+  createTask(payload:any)
   {
-      this.store.dispatch(new ShowModal());
+    this.store.dispatch(new CreateTask(payload))
   }
 }

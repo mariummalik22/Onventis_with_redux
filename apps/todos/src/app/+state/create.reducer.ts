@@ -5,16 +5,16 @@ import {
   ShowModal
 } from './create.actions';
 import { Roles, Status } from '../shared/tasks.model';
+import { ɵangular_packages_platform_browser_dynamic_platform_browser_dynamic_a } from '@angular/platform-browser-dynamic';
 export const CREATE_FEATURE_KEY = 'create';
 
 export interface CreateState {
   creating: boolean;
   success?: boolean;
-  name: string;
+  title: string;
   error?: any;
   opened: boolean;
   role: Roles[];
-  status: Status[];
 }
 
 export interface CreatePartialState {
@@ -23,10 +23,9 @@ export interface CreatePartialState {
 
 export const initialState: CreateState = {
   creating: false,
-  name: undefined,
+  title: undefined,
   opened: false,
-  role: [],
-  status: []
+  role: []
 };
 function loadRoles(state: CreateState) {
   state = {
@@ -72,6 +71,24 @@ export function reducer(
     case GeneralActionTypes.ShowModal: {
         state= showModal(state,action);
         break;
+    }
+
+    case GeneralActionTypes.CloseModal: {
+      state = {
+        ...state,
+        opened: false
+      };
+      break;
+    }
+
+    case GeneralActionTypes.CreateTask: {
+      state = {
+        ...state,
+        creating: true,
+        title: action.payload.title
+       
+      };
+      break;
     }
   }
   return state;

@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CreateFacade } from './+state/create.facade';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ModalComponent } from './modal/modal.component';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
+export interface DialogData {
+  animal: string;
+  name: string;
+}
 @Component({
   selector: 'myorg-root',
   templateUrl: './app.component.html',
@@ -9,17 +16,16 @@ import { CreateFacade } from './+state/create.facade';
 export class AppComponent implements OnInit {
   title = 'todos';
 
-  constructor( private createFacade: CreateFacade) {}
+  constructor(private createFacade: CreateFacade,) {}
 
-  ngOnInit()
+  
+  ngOnInit() {}
+
+  showModal()
   {
+    this.createFacade.showModal();
     
   }
 
-  getRoles()
-  {
-    //this.createFacade.showModal();
-   // this.createFacade.loadRoles();
-   // this.createFacade.roles$.subscribe(roles => console.log(roles));
-  }
+  
 }

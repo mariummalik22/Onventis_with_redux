@@ -4,13 +4,13 @@ import {
   GeneralActionTypes,
   LoadRoles,
   RolesLoaded,
-  ShowModal
+  ShowModal,
+  CloseModal
 } from './create.actions';
 import { tap, map, switchMap } from 'rxjs/operators';
 import { TaskService } from '../shared/task.service';
 import { DataPersistence } from '@nrwl/angular';
 import { CreatePartialState } from './create.reducer';
-
 
 @Injectable()
 export class CreateEffects {
@@ -32,10 +32,17 @@ export class CreateEffects {
   @Effect({ dispatch: false }) showModal$ = this.actions$.pipe(
     ofType<ShowModal>(GeneralActionTypes.ShowModal),
     tap(() => {
-     // this.taskService.presentModal();
+      this.taskService.openDialog();
     })
   );
 
+  @Effect({ dispatch: false }) closeModal$ = this.actions$.pipe(
+    ofType<CloseModal>(GeneralActionTypes.CloseModal),
+    tap(() => {
+      this.taskService.closeDialog();
+    })
+  );
+  
   constructor(
     private actions$: Actions,
     private taskService: TaskService,

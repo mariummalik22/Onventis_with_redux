@@ -1,0 +1,594 @@
+{
+  "class": [
+    "tasks"
+  ],
+  "actions": [
+    {
+      "rel": [
+        "tasks"
+      ],
+      "href": "https://mock/api/v2.8/tasks",
+      "method": "GET",
+      "type": "application/json"
+    },
+    {
+      "rel": [
+        "task_details"
+      ],
+      "href": "https://mock/api/v2.8/task/",
+      "method": "GET",
+      "type": "application/json"
+    }
+  ],
+  "entities": [
+    {
+      "id": "5d496a9a7400c590a60ec6aa",
+      "title": "DO",
+      "description": "Nisi eiusmod exercitation officia irure tempor consequat in proident. Sint non reprehenderit adipisicing aliqua. Anim ipsum eiusmod esse ex eu magna. Consectetur ex incididunt laborum do excepteur fugiat adipisicing eu elit qui deserunt. Magna consequat quis exercitation ex occaecat enim magna eu et. Ea do excepteur ex ullamco sint officia ut aliqua qui mollit sint in. Qui quis nisi veniam et cillum.",
+      "status": "concept",
+      "estimation": 31,
+      "time_spent": 0,
+      "created_on": "2016-02-22T06:15:13",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Jennings Maddox",
+            "role": "reporter"
+          },
+          {
+            "name": "Lewis Mayer",
+            "role": "developer"
+          },
+          {
+            "name": "Spence Holmes",
+            "role": "owner"
+          },
+          {
+            "name": "Harper Wall",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9acb1a7313898a7180",
+      "title": "LABORUM",
+      "description": "Et commodo ea ut ea qui qui ipsum fugiat consequat laborum. Adipisicing sint in ut aliquip consequat adipisicing. Ad cupidatat sint ea eu minim tempor nisi consectetur. Dolore duis commodo aliquip non nisi nostrud non cillum anim. Laboris veniam commodo in eu quis eu dolor. Laborum occaecat enim aliquip mollit minim amet magna consequat dolore anim id. Officia aliqua sunt nisi tempor deserunt est ullamco ad qui adipisicing.",
+      "status": "in_progress",
+      "estimation": 15,
+      "time_spent": 13,
+      "created_on": "2019-07-29T04:53:29",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Jenifer Jefferson",
+            "role": "owner"
+          },
+          {
+            "name": "Webb Medina",
+            "role": "reporter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a62d96f8237e65ee3",
+      "title": "UT",
+      "description": "Consectetur esse consequat ad cupidatat commodo irure. Exercitation commodo esse do excepteur eu ullamco ullamco. Commodo minim pariatur tempor esse. Excepteur do labore velit incididunt eu proident officia exercitation occaecat. Adipisicing tempor dolor quis ullamco eu ut qui. Exercitation est ex Lorem eu cillum. In ad pariatur ipsum nulla nisi ipsum laborum.",
+      "status": "concept",
+      "estimation": 38,
+      "time_spent": 2,
+      "created_on": "2014-03-08T07:07:28",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Katie Alvarado",
+            "role": "owner"
+          },
+          {
+            "name": "Conner Schneider",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9aac35b25fbafd2094",
+      "title": "ENIM",
+      "description": "Anim est aliquip deserunt sint qui est. Amet velit occaecat ullamco cillum velit ullamco. Adipisicing officia anim qui id nisi voluptate ipsum in proident elit eu proident. Excepteur ipsum laboris ut ad laboris. Non aliqua labore aliquip magna amet Lorem do. Laboris nostrud irure voluptate ad fugiat est cillum et consectetur cupidatat do quis cupidatat. Ex cupidatat incididunt velit ipsum officia voluptate sunt elit veniam dolore velit fugiat cupidatat.",
+      "status": "done",
+      "estimation": 19,
+      "time_spent": 20,
+      "created_on": "2015-02-04T06:58:54",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Robbie Noble",
+            "role": "reporter"
+          },
+          {
+            "name": "Ilene Nguyen",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9ae914d9a336e32b85",
+      "title": "AUTE",
+      "description": "Aute aliquip ex consequat ut id excepteur pariatur nulla aliqua incididunt ad ex. Dolore nulla aliquip eu irure occaecat officia ad et ex non do fugiat. Mollit mollit adipisicing officia proident id amet non et sit cillum amet deserunt sit. Adipisicing mollit occaecat nisi pariatur veniam velit.",
+      "status": "done",
+      "estimation": 40,
+      "time_spent": 40,
+      "created_on": "2017-10-14T04:17:24",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Mclean Michael",
+            "role": "developer"
+          },
+          {
+            "name": "Ophelia Tanner",
+            "role": "developer"
+          },
+          {
+            "name": "Barbara Gray",
+            "role": "reporter"
+          },
+          {
+            "name": "Dona Meadows",
+            "role": "owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a48d4b7bb9db74dec",
+      "title": "NULLA",
+      "description": "Pariatur excepteur adipisicing excepteur consectetur adipisicing qui. Ullamco qui amet do consequat eu aliqua ullamco veniam nulla aliquip in sit voluptate deserunt. Ut ea incididunt non reprehenderit id. Dolore adipisicing duis commodo dolor et cillum veniam ipsum velit mollit amet sunt. Consectetur duis consectetur est fugiat irure deserunt pariatur Lorem ut eiusmod cillum proident.",
+      "status": "in_progress",
+      "estimation": 35,
+      "time_spent": 7,
+      "created_on": "2018-10-19T04:01:28",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Johnson Cohen",
+            "role": "developer"
+          },
+          {
+            "name": "Claudine Sosa",
+            "role": "reporter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9ae62760234bce7b9c",
+      "title": "CUPIDATAT",
+      "description": "Quis minim incididunt nulla id. Ipsum nostrud Lorem consequat eu amet sunt eu labore. Excepteur ut irure nostrud voluptate. Sunt dolore minim labore fugiat elit id laborum nostrud reprehenderit deserunt aute labore.",
+      "status": "in_progress",
+      "estimation": 19,
+      "time_spent": 11,
+      "created_on": "2014-10-28T01:17:4",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Bradley Tyson",
+            "role": "owner"
+          },
+          {
+            "name": "Meredith Lott",
+            "role": "developer"
+          },
+          {
+            "name": "Kenya Justice",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9ad983ed15ade30f66",
+      "title": "LABORE",
+      "description": "Lorem culpa pariatur Lorem deserunt sit minim cupidatat excepteur laborum proident. Enim culpa duis voluptate et reprehenderit consequat nulla velit excepteur cillum dolor. Mollit aute duis reprehenderit anim aliqua pariatur exercitation pariatur cillum ea sunt.",
+      "status": "done",
+      "estimation": 18,
+      "time_spent": 37,
+      "created_on": "2016-01-06T02:34:29",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Clarissa Hopper",
+            "role": "developer"
+          },
+          {
+            "name": "Martinez Barnes",
+            "role": "reporter"
+          },
+          {
+            "name": "Cabrera Bennett",
+            "role": "owner"
+          },
+          {
+            "name": "Baird Johns",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a77c17cf7ce84c7dc",
+      "title": "LABORIS",
+      "description": "Lorem quis commodo velit minim sint. Ullamco commodo minim voluptate minim culpa exercitation. Proident enim exercitation consectetur non non.",
+      "status": "in_progress",
+      "estimation": 21,
+      "time_spent": 17,
+      "created_on": "2014-01-04T06:07:06",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Milagros Martin",
+            "role": "developer"
+          },
+          {
+            "name": "Strickland Vaughn",
+            "role": "owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a59de1de60ba398c0",
+      "title": "INCIDIDUNT",
+      "description": "Ad adipisicing minim proident esse labore quis nostrud deserunt nisi nostrud quis. Proident et enim fugiat adipisicing sunt eiusmod tempor reprehenderit. Tempor et nulla laboris deserunt pariatur non in laboris voluptate dolore officia velit.",
+      "status": "concept",
+      "estimation": 33,
+      "time_spent": 0,
+      "created_on": "2017-01-24T10:36:42",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Lisa May",
+            "role": "owner"
+          },
+          {
+            "name": "Gallagher Rivera",
+            "role": "developer"
+          },
+          {
+            "name": "Mcintosh Mosley",
+            "role": "reporter"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a93f074c3c58a85c2",
+      "title": "CONSEQUAT",
+      "description": "Non quis cillum incididunt tempor enim cillum cillum non ad. Excepteur qui exercitation irure magna labore commodo elit elit fugiat elit fugiat ullamco id. Anim ullamco eu proident exercitation quis. Sit incididunt incididunt sint duis cillum sunt labore consectetur amet velit deserunt dolor deserunt voluptate. Cillum aute amet dolore excepteur sunt Lorem sunt in dolore duis mollit. Occaecat deserunt in mollit velit enim elit sit excepteur eu eu. Anim cupidatat nostrud reprehenderit officia proident ad dolor dolore ullamco.",
+      "status": "concept",
+      "estimation": 34,
+      "time_spent": 27,
+      "created_on": "2017-07-27T08:31:02",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Misty Hunter",
+            "role": "developer"
+          },
+          {
+            "name": "Jocelyn Wilkerson",
+            "role": "owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a435ff6dd95891911",
+      "title": "AD",
+      "description": "Eiusmod non aliquip nisi ullamco cupidatat ea sunt fugiat dolor commodo. Pariatur officia qui esse ullamco culpa eiusmod sint excepteur in. Esse in dolore velit dolore sit sint ut ad aliqua ad ullamco ullamco. Incididunt eu cillum quis tempor. Exercitation consectetur aliquip occaecat ullamco. Qui consequat qui dolore ea Lorem sit esse irure nostrud ipsum voluptate est nulla dolore.",
+      "status": "done",
+      "estimation": 35,
+      "time_spent": 7,
+      "created_on": "2017-06-04T06:20:57",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Sweet Shepard",
+            "role": "reporter"
+          },
+          {
+            "name": "Hull Wiggins",
+            "role": "developer"
+          },
+          {
+            "name": "Queen Wilder",
+            "role": "owner"
+          },
+          {
+            "name": "Billie William",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a814591cb652635d9",
+      "title": "CUPIDATAT",
+      "description": "Consectetur nostrud officia nostrud laboris. Incididunt ea fugiat occaecat culpa reprehenderit incididunt labore Lorem do sit id deserunt nostrud. Aute deserunt enim occaecat eu nisi enim pariatur in enim reprehenderit ea minim est. Ipsum quis irure nisi irure nisi non reprehenderit cupidatat pariatur quis reprehenderit ullamco excepteur incididunt. Ex dolore amet aliqua sunt sint ipsum voluptate mollit anim eu labore aute nulla duis. Dolor magna fugiat elit enim adipisicing labore.",
+      "status": "in_progress",
+      "estimation": 26,
+      "time_spent": 15,
+      "created_on": "2019-07-29T06:38:33",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Stevens Burks",
+            "role": "reporter"
+          },
+          {
+            "name": "Burton Mcconnell",
+            "role": "owner"
+          },
+          {
+            "name": "Le Wright",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9ac4e67ae4f5fec9e9",
+      "title": "AUTE",
+      "description": "Ipsum qui ad consequat eu ex officia laboris in occaecat ex velit. Nulla magna labore tempor sint id proident mollit commodo culpa consequat. Ipsum qui excepteur minim ut do consectetur veniam magna nulla. Labore do nostrud duis ex commodo culpa aliqua commodo ea labore. Consequat occaecat officia irure laboris laborum.",
+      "status": "in_progress",
+      "estimation": 37,
+      "time_spent": 14,
+      "created_on": "2015-11-23T01:32:52",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Dana Hunt",
+            "role": "reporter"
+          },
+          {
+            "name": "Norman Robinson",
+            "role": "developer"
+          },
+          {
+            "name": "Nanette Pope",
+            "role": "owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a8a8aca679d085534",
+      "title": "CILLUM",
+      "description": "Deserunt labore culpa consequat do fugiat culpa. Ex proident cupidatat culpa duis commodo non dolor Lorem occaecat. Magna elit proident sint excepteur aliqua mollit ullamco exercitation culpa cupidatat incididunt sit. Labore exercitation pariatur irure enim ad pariatur exercitation aute culpa mollit aliqua. Reprehenderit enim eu aliquip pariatur minim commodo cillum sint sunt eiusmod minim et est sunt. Laborum laboris consectetur reprehenderit id culpa ullamco.",
+      "status": "done",
+      "estimation": 37,
+      "time_spent": 8,
+      "created_on": "2017-11-27T10:02:42",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Faulkner Howard",
+            "role": "reporter"
+          },
+          {
+            "name": "Francis Zamora",
+            "role": "developer"
+          },
+          {
+            "name": "Elvira Estes",
+            "role": "owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a650c6b963aff816e",
+      "title": "COMMODO",
+      "description": "Sunt do mollit enim aliquip cillum in aliquip quis eiusmod esse Lorem Lorem. Voluptate nisi veniam irure pariatur ad aliquip. Excepteur voluptate ex qui et enim veniam laboris esse Lorem Lorem ad occaecat ex. Exercitation adipisicing ut laboris incididunt duis exercitation id veniam anim laborum.",
+      "status": "in_progress",
+      "estimation": 32,
+      "time_spent": 20,
+      "created_on": "2015-08-29T04:48:57",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Donna Adkins",
+            "role": "reporter"
+          },
+          {
+            "name": "Melva Clayton",
+            "role": "developer"
+          },
+          {
+            "name": "Estelle Espinoza",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d496a9a299e5416c1923780",
+      "title": "EXERCITATION",
+      "description": "Magna excepteur id cupidatat dolor dolor. Voluptate sint non aliquip velit eiusmod amet. Ullamco cupidatat in ipsum culpa. Lorem aliquip reprehenderit cillum dolor cillum duis aliqua elit consequat fugiat id laborum. Lorem consequat et veniam non commodo pariatur ea anim est laboris amet dolore aliqua incididunt. Quis officia ipsum sint reprehenderit velit ut tempor veniam.",
+      "status": "done",
+      "estimation": 11,
+      "time_spent": 39,
+      "created_on": "2016-09-28T10:16:00",
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Wilma Davenport",
+            "role": "owner"
+          },
+          {
+            "name": "Neal House",
+            "role": "reporter"
+          },
+          {
+            "name": "Campos Wagner",
+            "role": "developer"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1566837584,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Marium",
+            "role": "owner"
+          }
+        ]
+      },
+      "description": "This is the description",
+      "title": "Miss",
+      "time_spent": 12,
+      "estimation": 100,
+      "created_on": "2019-08-26T16:39:44.379Z",
+      "status": "concept"
+    },
+    {
+      "id": 1566837680,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Marium",
+            "role": "owner"
+          },
+          {
+            "name": "Malik",
+            "role": "reporter"
+          }
+        ]
+      },
+      "description": "This is the description",
+      "title": "Mrs",
+      "time_spent": 10,
+      "estimation": 100,
+      "created_on": "2019-08-26T16:41:20.901Z",
+      "status": "in_progress"
+    },
+    {
+      "id": 1566839676,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Mar",
+            "role": "owner"
+          }
+        ]
+      },
+      "description": "This is the description",
+      "title": "Mr",
+      "time_spent": 10,
+      "estimation": "100",
+      "created_on": "2019-08-26T17:14:36.524Z",
+      "status": "concept"
+    },
+    {
+      "id": 1566839898,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Marium Malik",
+            "role": "developer"
+          },
+          {
+            "name": "Sameen",
+            "role": "reporter"
+          }
+        ]
+      },
+      "description": "This is the description of the task",
+      "title": "Mr",
+      "time_spent": 10,
+      "estimation": 50,
+      "created_on": "2019-08-26T17:18:18.478Z",
+      "status": "in_progress"
+    },
+    {
+      "id": 1566840301,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Marium",
+            "role": "owner"
+          },
+          {
+            "name": "Malik",
+            "role": "reporter"
+          }
+        ]
+      },
+      "description": "This is the description of the new task",
+      "title": "Mrs",
+      "time_spent": 12,
+      "estimation": 50,
+      "created_on": "2019-08-26T17:25:01.576Z",
+      "status": "done"
+    },
+    {
+      "id": 1566840673,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Onventis",
+            "role": "owner"
+          },
+          {
+            "name": "Ferchau",
+            "role": "developer"
+          }
+        ]
+      },
+      "description": "This is the new description related to video",
+      "title": "Mr",
+      "time_spent": 16,
+      "estimation": 22,
+      "created_on": "2019-08-26T17:31:13.032Z",
+      "status": "in_progress"
+    },
+    {
+      "id": 1566859970,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "vv",
+            "role": "owner"
+          }
+        ]
+      },
+      "description": "des",
+      "title": "Mmao",
+      "time_spent": 112,
+      "estimation": 56,
+      "created_on": "2019-08-26T22:52:50.199Z",
+      "status": "concept"
+    },
+    {
+      "id": 1573475697,
+      "meta": {
+        "persons_involved": [
+          {
+            "name": "Marium",
+            "role": "owner"
+          }
+        ]
+      },
+      "description": "This is the description",
+      "title": "MS",
+      "time_spent": 8,
+      "estimation": 9,
+      "created_on": "2019-11-11T12:34:57.339Z",
+      "status": "concept"
+    }
+  ]
+}
