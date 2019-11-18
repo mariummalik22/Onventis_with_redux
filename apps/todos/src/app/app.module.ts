@@ -14,12 +14,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {TaskService} from './shared/task.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import {FlavorSizePipe} from './flavors.pipe'
 
 import { ModalModule } from './modal/modal.module';
+import { LoadingButtonComponent } from './loading-button/loading-button.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoadingButtonComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -37,7 +39,7 @@ import { ModalModule } from './modal/modal.module';
     EffectsModule.forRoot([]),
     BrowserAnimationsModule,
   ],
-  providers: [TaskService,CreateFacade,DataPersistence,
+  providers: [TaskService,CreateFacade,DataPersistence, FlavorSizePipe,
     {
       provide: MatDialogRef,
       useValue: {}

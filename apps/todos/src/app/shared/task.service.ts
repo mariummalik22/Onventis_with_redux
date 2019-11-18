@@ -30,6 +30,7 @@ export class TaskService {
       value: 'reporter'
     }
   ];
+  
 
   animal: string;
   name: string;
@@ -40,6 +41,7 @@ export class TaskService {
     public dialogRef: MatDialogRef<ModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
     private httpClient: HttpClient
+    
   ) {}
 
   getRoles(): Observable<Roles[]> {
@@ -71,11 +73,20 @@ export class TaskService {
     this.dialog.closeAll();
   }
 
-  createTask(task:any)
+  createTask(formFields:any)
   {
-    this.httpClient
-    .post(this.TASKS_URL, JSON.stringify(task), {
-      headers: { 'Content-Type': 'application/json' }
-    })
-  }
+    return this.httpClient
+     .post(this.TASKS_URL, JSON.stringify(formFields), {
+       headers: { 'Content-Type': 'application/json' }
+     })
+   }
+
+updateTask(formFields:any)
+{
+  return this.httpClient
+  .post(this.TASKS_URL, JSON.stringify(formFields), {
+    headers: { 'Content-Type': 'application/json' }
+  })
+}
+
 }

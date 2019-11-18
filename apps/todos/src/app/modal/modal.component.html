@@ -1,18 +1,40 @@
-<h1 mat-dialog-title>NX </h1>
-<div mat-dialog-content>
-    <button mat-raised-button (click)="getRoles()">Get Roles</button>
-    <form>
+<form [formGroup]="taskForm" (ngSubmit)="submitResults()">
+    <h1 mat-dialog-title> NX </h1>
+    <div mat-dialog-content>
+        <div>
+            <button type='button' mat-raised-button (click)="getRoles()">Get Roles</button>
+        </div>
 
         <mat-form-field>
-            <input matInput placeholder="Title">
+            <input matInput placeholder="Title" formControlName="title">
         </mat-form-field>
 
         <mat-form-field>
-                <input matInput placeholder="Description">
-            </mat-form-field>
-    </form>
-</div>
-<div mat-dialog-actions>
-        <button mat-button (click)="onNoClick()">Submit Form</button>
-        <button mat-button (click)="onNoClick()">No Thanks</button>
+            <input matInput placeholder="Description" formControlName="description">
+        </mat-form-field>
+
     </div>
+    <div mat-dialog-actions>
+        <button mat-button type='submit'>Submit Form</button>
+        <button mat-button (click)="onNoClick()" type='button'>No Thanks</button>
+    </div>
+</form>
+
+<form [formGroup]="taskForm" (ngSubmit)="updateResults()">
+    <h1 mat-dialog-title> NX </h1>
+    <div mat-dialog-content>
+
+        <mat-form-field>
+            <input matInput placeholder="Title" formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Description" formControlName="description">
+        </mat-form-field>
+
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button type='submit'>Update Form</button>
+        <button mat-button (click)="onNoClick()" type='button'>No Thanks</button>
+    </div>
+</form>

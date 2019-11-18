@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CreateFacade } from './+state/create.facade';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import {FlavorSizePipe} from './flavors.pipe'
 
 export interface DialogData {
   animal: string;
@@ -15,16 +15,39 @@ export interface DialogData {
 })
 export class AppComponent implements OnInit {
   title = 'todos';
+  loading:boolean;
 
-  constructor(private createFacade: CreateFacade,) {}
+  size=this.flavorSizePipe.transform(1073741824,'MB');
+
+  constructor(private createFacade: CreateFacade, private flavorSizePipe: FlavorSizePipe) {}
 
   
-  ngOnInit() {}
+  ngOnInit() {
+
+    this.check();
+  }
 
   showModal()
   {
     this.createFacade.showModal();
     
+  }
+
+  check ()
+{
+  this.loading = true;
+  console.log('In check');
+  let size=9485039485039445;
+  let unit = 0;
+
+    while (size >= 1024) {
+        size /= 1024;
+        
+        console.log(size);
+        unit++;
+        console.log(unit);
+    } 
+
   }
 
   

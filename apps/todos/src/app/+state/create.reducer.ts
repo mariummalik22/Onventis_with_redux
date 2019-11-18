@@ -1,11 +1,12 @@
 import {
-  CreateAction,
+  GeneralActions,
   GeneralActionTypes,
   RolesLoaded,
-  ShowModal
+  ShowModal,
+  TaskCreated,
+  UpdateTask
 } from './create.actions';
-import { Roles, Status } from '../shared/tasks.model';
-import { ɵangular_packages_platform_browser_dynamic_platform_browser_dynamic_a } from '@angular/platform-browser-dynamic';
+import { Roles } from '../shared/tasks.model';
 export const CREATE_FEATURE_KEY = 'create';
 
 export interface CreateState {
@@ -29,35 +30,50 @@ export const initialState: CreateState = {
 };
 function loadRoles(state: CreateState) {
   state = {
-    ...state
+    ...initialState,
+    opened: true
   };
   return state;
 }
 
 function rolesLoaded(state: CreateState, action: RolesLoaded) {
   state = {
-    ...state,
+    ...initialState,
+    opened: true,
     role: action.payload
   };
   return state;
 }
+function taskCreated(state: CreateState, action: TaskCreated) {
+  state = {
+    ...state,
+    title: action.payload.title
+  };
+  return state;
+}
 
-function showModal(state: CreateState, action: ShowModal)
+function showModal(state: CreateState, action: ShowModal) {
+  state = {
+    ...state,
+    opened: true,
+    creating: true
+  };
+
+  return state;
+}
+
+function updateTask(state: CreateState, action: UpdateTask)
 {
-    state= {
-        ...state,
-        opened: true
-    }
-
-    return state;
+state={
+  ...state
+}
 }
 
 export function reducer(
   state: CreateState = initialState,
-  action: CreateAction
+  action: GeneralActions
 ): CreateState {
   switch (action.type) {
-
     case GeneralActionTypes.LoadRoles: {
       state = loadRoles(state);
       break;
@@ -69,13 +85,13 @@ export function reducer(
     }
 
     case GeneralActionTypes.ShowModal: {
-        state= showModal(state,action);
-        break;
+      state = showModal(state, action);
+      break;
     }
 
     case GeneralActionTypes.CloseModal: {
       state = {
-        ...state,
+        ...initialState,
         opened: false
       };
       break;
@@ -86,7 +102,16 @@ export function reducer(
         ...state,
         creating: true,
         title: action.payload.title
-       
+      };
+      break;
+    }
+
+    case GeneralActionTypes.TaskCreated: {
+      state = {
+        ...state,
+        title: action.payload.title,
+        success: true,
+        creating: false
       };
       break;
     }
